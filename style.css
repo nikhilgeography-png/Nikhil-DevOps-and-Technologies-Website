@@ -1,0 +1,41 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;line-height:1.6;background:#07111f;color:#eaf2ff}
+.navbar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(7,17,31,.94);backdrop-filter:blur(12px);border-bottom:1px solid #1d3048}
+.logo{font-size:21px;font-weight:900;color:#fff;text-decoration:none;letter-spacing:.5px}
+.logo span{display:block;font-size:10px;letter-spacing:3px;color:#5cc8ff}
+nav{display:flex;gap:26px}
+nav a{color:#c8d6e8;text-decoration:none;font-size:14px}
+nav a:hover{color:#fff}
+.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{min-height:86vh;display:flex;align-items:center;padding:80px 7%;background:radial-gradient(circle at 75% 30%,#143a63 0,#07111f 45%),#07111f}
+.hero-content{max-width:850px}
+.eyebrow{font-size:12px;letter-spacing:3px;font-weight:800;color:#62c9ff;margin-bottom:14px}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.05;margin-bottom:24px}
+h1 span{color:#62c9ff}
+.lead{font-size:19px;color:#aebed1;max-width:720px;margin-bottom:32px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid #31506f}
+.primary{background:#62c9ff;color:#04101d;border-color:#62c9ff}
+.secondary{color:#fff;background:#102238}
+.section{padding:90px 7%;background:#f7f9fc;color:#0b1726}
+.section.dark{background:#0a1727;color:#eef5ff}
+.section-heading{max-width:800px;margin-bottom:35px}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.15}
+.text{max-width:850px;color:#607086;margin:0 0 14px;font-size:17px}
+.dark .text{color:#aebed1}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:28px;border:1px solid #203852;border-radius:14px;background:#0d2035}
+.card .icon{font-size:30px;margin-bottom:12px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{color:#aebed1}
+.tech-list{display:flex;gap:12px;flex-wrap:wrap}
+.tech-list span{padding:11px 16px;border:1px solid #cbd7e5;border-radius:30px;background:#fff;font-weight:700}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.features div{padding:18px;border:1px solid #203852;border-radius:10px;background:#0d2035}
+.contact{background:linear-gradient(135deg,#edf7ff,#fff)}
+.contact-details{margin:25px 0;color:#40536b}
+footer{text-align:center;padding:35px 7%;background:#040b14;color:#9db0c5}
+footer strong{color:#fff}
+footer p{margin-top:6px;font-size:14px}
+@media(max-width:800px){nav{display:none;position:absolute;top:65px;left:0;right:0;flex-direction:column;padding:20px 7%;background:#07111f;border-bottom:1px solid #1d3048}.menu{display:block}.grid,.features{grid-template-columns:1fr}.hero{min-height:78vh;padding-top:60px}.section{padding:65px 7%}}
